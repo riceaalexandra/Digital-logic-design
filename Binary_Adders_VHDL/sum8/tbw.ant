@@ -1,0 +1,152 @@
+--------------------------------------------------------------------------------
+-- Copyright (c) 1995-2007 Xilinx, Inc.
+-- All Right Reserved.
+--------------------------------------------------------------------------------
+--   ____  ____ 
+--  /   /\/   / 
+-- /___/  \  /    Vendor: Xilinx 
+-- \   \   \/     Version : 9.2.04i
+--  \   \         Application : ISE
+--  /   /         Filename : tbw.ant
+-- /___/   /\     Timestamp : Mon Mar 14 19:54:16 2022
+-- \   \  /  \ 
+--  \___\/\___\ 
+--
+--Command: 
+--Design Name: tbw
+--Device: Xilinx
+--
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE IEEE.STD_LOGIC_TEXTIO.ALL;
+USE STD.TEXTIO.ALL;
+
+ENTITY tbw IS
+END tbw;
+
+ARCHITECTURE testbench_arch OF tbw IS
+    FILE RESULTS: TEXT OPEN WRITE_MODE IS "D:\sum8\tbw.ano";
+
+    COMPONENT sum8
+        PORT (
+            iCY0 : In std_logic;
+            iaOp1 : In std_logic_vector (7 DownTo 0);
+            iaOp2 : In std_logic_vector (7 DownTo 0);
+            oCY : Out std_logic;
+            oaSum : Out std_logic_vector (7 DownTo 0)
+        );
+    END COMPONENT;
+
+    SIGNAL iCY0 : std_logic := '0';
+    SIGNAL iaOp1 : std_logic_vector (7 DownTo 0) := "01010101";
+    SIGNAL iaOp2 : std_logic_vector (7 DownTo 0) := "10101010";
+    SIGNAL oCY : std_logic := '0';
+    SIGNAL oaSum : std_logic_vector (7 DownTo 0) := "00000000";
+
+    SHARED VARIABLE TX_ERROR : INTEGER := 0;
+    SHARED VARIABLE TX_OUT : LINE;
+
+    BEGIN
+        UUT : sum8
+        PORT MAP (
+            iCY0 => iCY0,
+            iaOp1 => iaOp1,
+            iaOp2 => iaOp2,
+            oCY => oCY,
+            oaSum => oaSum
+        );
+
+        PROCESS    -- Annotation process
+            VARIABLE TX_TIME : INTEGER := 0;
+
+            PROCEDURE ANNOTATE_oCY(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", oCY, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, oCY);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_oaSum(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", oaSum, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, oaSum);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+        BEGIN
+            WAIT for 1 fs;
+            ANNOTATE_oCY(0);
+            ANNOTATE_oaSum(0);
+            ANNO_LOOP : LOOP
+                WAIT for 10 ns;
+                TX_TIME := TX_TIME + 10;
+                ANNOTATE_oCY(TX_TIME);
+                ANNOTATE_oaSum(TX_TIME);
+                WAIT for 10 ns;
+                TX_TIME := TX_TIME + 10;
+            END LOOP ANNO_LOOP;
+        END PROCESS;
+
+        PROCESS
+            BEGIN
+                -- -------------  Current Time:  180ns
+                WAIT FOR 180 ns;
+                iaOp2 <= "01010101";
+                -- -------------------------------------
+                -- -------------  Current Time:  200ns
+                WAIT FOR 20 ns;
+                iaOp1 <= "11001100";
+                -- -------------------------------------
+                -- -------------  Current Time:  320ns
+                WAIT FOR 120 ns;
+                iaOp1 <= "10101010";
+                -- -------------------------------------
+                -- -------------  Current Time:  400ns
+                WAIT FOR 80 ns;
+                iaOp2 <= "11001100";
+                -- -------------------------------------
+                -- -------------  Current Time:  500ns
+                WAIT FOR 100 ns;
+                iCY0 <= '1';
+                iaOp1 <= "01010101";
+                -- -------------------------------------
+                -- -------------  Current Time:  680ns
+                WAIT FOR 180 ns;
+                iaOp1 <= "11001100";
+                iaOp2 <= "00110011";
+                -- -------------------------------------
+                -- -------------  Current Time:  820ns
+                WAIT FOR 140 ns;
+                iaOp1 <= "10101010";
+                iaOp2 <= "11110000";
+                -- -------------------------------------
+                WAIT FOR 180 ns;
+
+                STD.TEXTIO.write(TX_OUT, string'("Total[]"));
+                STD.TEXTIO.writeline(RESULTS, TX_OUT);
+                ASSERT (FALSE) REPORT
+                    "Success! Simulation for annotation completed"
+                    SEVERITY FAILURE;
+            END PROCESS;
+
+    END testbench_arch;
+

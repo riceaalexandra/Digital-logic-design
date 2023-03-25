@@ -1,0 +1,20 @@
+V3 14
+FL D:/MUX-Ricea-Alexandra/schema/functie.vhf 2022/01/06.11:39:53 J.40
+EN work/M2_1E_MXILINX_functie 1641461995 \
+      FL D:/MUX-Ricea-Alexandra/schema/functie.vhf PB ieee/std_logic_1164 1192821031 \
+      PH ieee/NUMERIC_STD 1192821033 LB UNISIM PH unisim/VCOMPONENTS 1194566982
+AR work/M2_1E_MXILINX_functie/BEHAVIORAL 1641461996 \
+      FL D:/MUX-Ricea-Alexandra/schema/functie.vhf EN work/M2_1E_MXILINX_functie 1641461995 \
+      CP AND3 CP AND3B1 CP OR2
+EN work/M4_1E_MXILINX_functie 1641461997 \
+      FL D:/MUX-Ricea-Alexandra/schema/functie.vhf PB ieee/std_logic_1164 1192821031 \
+      PH ieee/NUMERIC_STD 1192821033 LB UNISIM PH unisim/VCOMPONENTS 1194566982
+AR work/M4_1E_MXILINX_functie/BEHAVIORAL 1641461998 \
+      FL D:/MUX-Ricea-Alexandra/schema/functie.vhf EN work/M4_1E_MXILINX_functie 1641461997 \
+      CP M2_1E_MXILINX_functie CP MUXF5
+EN work/functie 1641461999 \
+      FL D:/MUX-Ricea-Alexandra/schema/functie.vhf PB ieee/std_logic_1164 1192821031 \
+      PH ieee/NUMERIC_STD 1192821033 LB UNISIM PH unisim/VCOMPONENTS 1194566982
+AR work/functie/BEHAVIORAL 1641462000 \
+      FL D:/MUX-Ricea-Alexandra/schema/functie.vhf EN work/functie 1641461999 \
+      CP M4_1E_MXILINX_functie

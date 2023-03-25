@@ -1,0 +1,6 @@
+xst -ise "D:/laborator_6_partea_comuna_II/RegDSD/RegDSD.ise" -intstyle ise -ifn RegDSD.xst -ofn RegDSD.syr
+ngdbuild -ise "D:/laborator_6_partea_comuna_II/RegDSD/RegDSD.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-ft256-4 "RegDSD.ngc" RegDSD.ngd
+map -ise "D:/laborator_6_partea_comuna_II/RegDSD/RegDSD.ise" -intstyle ise -p xc3s400-ft256-4 -cm area -pr b -k 4 -c 100 -o RegDSD_map.ncd RegDSD.ngd RegDSD.pcf
+par -ise "D:/laborator_6_partea_comuna_II/RegDSD/RegDSD.ise" -w -intstyle ise -ol std -t 1 RegDSD_map.ncd RegDSD.ncd RegDSD.pcf
+trce -ise "D:/laborator_6_partea_comuna_II/RegDSD/RegDSD.ise" -intstyle ise -e 3 -s 4 -xml RegDSD RegDSD.ncd -o RegDSD.twr RegDSD.pcf
+netgen -ise "D:/laborator_6_partea_comuna_II/RegDSD/RegDSD.ise" -intstyle ise -s 4 -pcf RegDSD.pcf -rpw 100 -tpw 0 -ar Structure -tm RegDSD -insert_pp_buffers false -w -dir netgen/par -ofmt vhdl -sim RegDSD.ncd RegDSD_timesim.vhd

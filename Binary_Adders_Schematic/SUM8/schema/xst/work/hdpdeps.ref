@@ -1,0 +1,14 @@
+V3 13
+FL D:/SUM8-Ricea-Alexandra/schema/functie.vhf 2022/01/06.13:29:50 J.40
+EN work/ADD8_MXILINX_functie 1641640705 \
+      FL D:/SUM8-Ricea-Alexandra/schema/functie.vhf PB ieee/std_logic_1164 1192821031 \
+      PH ieee/NUMERIC_STD 1192821033 LB UNISIM PH unisim/VCOMPONENTS 1194566982
+AR work/ADD8_MXILINX_functie/BEHAVIORAL 1641640706 \
+      FL D:/SUM8-Ricea-Alexandra/schema/functie.vhf EN work/ADD8_MXILINX_functie 1641640705 \
+      CP FMAP CP MUXCY_L CP MUXCY CP XORCY CP MUXCY_D CP XOR2
+EN work/functie 1641640707 \
+      FL D:/SUM8-Ricea-Alexandra/schema/functie.vhf PB ieee/std_logic_1164 1192821031 \
+      PH ieee/NUMERIC_STD 1192821033 LB UNISIM PH unisim/VCOMPONENTS 1194566982
+AR work/functie/BEHAVIORAL 1641640708 \
+      FL D:/SUM8-Ricea-Alexandra/schema/functie.vhf EN work/functie 1641640707 \
+      CP ADD8_MXILINX_functie

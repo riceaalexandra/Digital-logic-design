@@ -1,0 +1,6 @@
+xst -ise "D:/laborator_7_partea_comuna/NumL/NumL.ise" -intstyle ise -ifn NumL.xst -ofn NumL.syr
+ngdbuild -ise "D:/laborator_7_partea_comuna/NumL/NumL.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xa3s50-vqg100-4 "NumL.ngc" NumL.ngd
+map -ise "D:/laborator_7_partea_comuna/NumL/NumL.ise" -intstyle ise -p xa3s50-vqg100-4 -cm area -pr b -k 4 -c 100 -o NumL_map.ncd NumL.ngd NumL.pcf
+par -ise "D:/laborator_7_partea_comuna/NumL/NumL.ise" -w -intstyle ise -ol std -t 1 NumL_map.ncd NumL.ncd NumL.pcf
+trce -ise "D:/laborator_7_partea_comuna/NumL/NumL.ise" -intstyle ise -e 3 -s 4 -xml NumL NumL.ncd -o NumL.twr NumL.pcf
+netgen -ise "D:/laborator_7_partea_comuna/NumL/NumL.ise" -intstyle ise -s 4 -pcf NumL.pcf -sdf_anno true -sdf_path netgen/par -insert_glbl true -insert_pp_buffers false -w -dir netgen/par -ofmt verilog -sim NumL.ncd NumL_timesim.v

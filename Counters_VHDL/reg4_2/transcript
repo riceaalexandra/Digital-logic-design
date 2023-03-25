@@ -1,0 +1,47 @@
+# Reading C:/Modeltech_xe_starter/tcl/vsim/pref.tcl 
+# do {tbw.fdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim XE III vcom 6.4b Compiler 2008.11 Nov 15 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity reg4_2
+# -- Compiling architecture behavioral of reg4_2
+# Model Technology ModelSim XE III vcom 6.4b Compiler 2008.11 Nov 15 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Compiling entity tbw
+# -- Compiling architecture testbench_arch of tbw
+# vsim -lib work -t 1ps tbw 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tbw(testbench_arch)
+# Loading work.reg4_2(behavioral)
+# .main_pane.mdi.interior.cs.vm.paneset.cli_0.wf.clip.cs.pw.wf
+# .main_pane.workspace.interior.cs.nb.canvas.notebook.cs.page2.cs
+# .main_pane.signals.interior.cs
+add wave \
+{sim:/tbw/uut/saq } 
+add wave \
+{sim:/tbw/uut/say } 
+restart
+# error on action  namespace inscope ::vsimwidgets::Srcedit {::.main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.editor Action} returned error: 
+# can't read "itk_component(editor)": no such element in array 
+#  Trace back: 
+# function is namespace inscope ::vsimwidgets::Srcedit {::.main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.editor Action} SetMenuState {{can_cut {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf0.standard.tb.button_172}} {can_copy {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf0.standard.tb.button_173}} {can_paste {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf0.standard.tb.button_174}} {can_findprevzerohits {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf4.source.tb.button_207}} {can_undo {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf0.standard.tb.button_175}} {can_redo {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf0.standard.tb.button_176}} {can_findnextzerohits {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf4.source.tb.button_208}} {can_source_annotate {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf4.source.tb.button_210}} {can_findaction {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf0.standard.tb.button_177}} {can_languagetemplate {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf4.source.tb.button_209}} {can_cllpsall {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf0.standard.tb.button_178}} {can_clear_bookmark {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf4.source.tb.button_211}} {can_expndall {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf0.standard.tb.button_179}} {can_save {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf0.standard.tb.button_169}} 
+# {can_print {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf0.standard.tb.button_171}}}
+# 
+#  
+#    2: ::.vcop Action SetMenuState {{can_cut {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf0.standard.tb.button_172}} {can_copy {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf0.standard.tb.button_173}} {can_paste {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf0.standard.tb.button_174}} {can_findprevzerohits {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf4.source.tb.button_207}} {can_undo {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf0.standard.tb.button_175}} {can_redo {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf0.standard.tb.button_176}} {can_findnextzerohits {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf4.source.tb.button_208}} {can_source_annotate {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf4.source.tb.button_210}} {can_findaction {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf0.standard.tb.button_177}} {can_languagetemplate {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf4.source.tb.button_209}} {can_cllpsall {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf0.standard.tb.button_178}} {can_clear_bookmark {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf4.source.tb.button_211}} {can_expndall {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf0.standard.tb.button_179}} {can_save {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf0.standard.tb.button_169}} {can_print {Tbar::setstate_buttondirect .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.controls.tbf0.standard.tb.button_171}}} 
+# 
+#    1: ::.vcop UpdateToolbars 
+run

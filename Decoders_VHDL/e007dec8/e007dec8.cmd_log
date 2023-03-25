@@ -1,0 +1,2 @@
+xst -ise "D:/e007dec8/e007dec8.ise" -intstyle ise -ifn e007dec8.xst -ofn e007dec8.syr
+xst -ise "D:/e007dec8/e007dec8.ise" -intstyle ise -ifn e007dec8.xst -ofn e007dec8.syr

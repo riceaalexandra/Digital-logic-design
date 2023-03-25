@@ -1,0 +1,189 @@
+--------------------------------------------------------------------------------
+-- Copyright (c) 1995-2007 Xilinx, Inc.
+-- All Right Reserved.
+--------------------------------------------------------------------------------
+--   ____  ____ 
+--  /   /\/   / 
+-- /___/  \  /    Vendor: Xilinx 
+-- \   \   \/     Version : 9.2.04i
+--  \   \         Application : ISE
+--  /   /         Filename : tbw.ant
+-- /___/   /\     Timestamp : Sat Mar 05 21:59:10 2022
+-- \   \  /  \ 
+--  \___\/\___\ 
+--
+--Command: 
+--Design Name: tbw
+--Device: Xilinx
+--
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE IEEE.STD_LOGIC_TEXTIO.ALL;
+USE STD.TEXTIO.ALL;
+
+ENTITY tbw IS
+END tbw;
+
+ARCHITECTURE testbench_arch OF tbw IS
+    FILE RESULTS: TEXT OPEN WRITE_MODE IS "D:\e010demuxv\tbw.ano";
+
+    COMPONENT e010demuxv
+        PORT (
+            iaData : In std_logic_vector (1 DownTo 0);
+            iaAdr : In std_logic_vector (1 DownTo 0);
+            oaA : Out std_logic_vector (1 DownTo 0);
+            oaB : Out std_logic_vector (1 DownTo 0);
+            oaC : Out std_logic_vector (1 DownTo 0);
+            oaD : Out std_logic_vector (1 DownTo 0)
+        );
+    END COMPONENT;
+
+    SIGNAL iaData : std_logic_vector (1 DownTo 0) := "00";
+    SIGNAL iaAdr : std_logic_vector (1 DownTo 0) := "00";
+    SIGNAL oaA : std_logic_vector (1 DownTo 0) := "00";
+    SIGNAL oaB : std_logic_vector (1 DownTo 0) := "00";
+    SIGNAL oaC : std_logic_vector (1 DownTo 0) := "00";
+    SIGNAL oaD : std_logic_vector (1 DownTo 0) := "00";
+
+    SHARED VARIABLE TX_ERROR : INTEGER := 0;
+    SHARED VARIABLE TX_OUT : LINE;
+
+    BEGIN
+        UUT : e010demuxv
+        PORT MAP (
+            iaData => iaData,
+            iaAdr => iaAdr,
+            oaA => oaA,
+            oaB => oaB,
+            oaC => oaC,
+            oaD => oaD
+        );
+
+        PROCESS    -- Annotation process
+            VARIABLE TX_TIME : INTEGER := 0;
+
+            PROCEDURE ANNOTATE_oaA(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", oaA, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, oaA);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_oaB(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", oaB, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, oaB);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_oaC(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", oaC, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, oaC);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_oaD(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", oaD, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, oaD);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+        BEGIN
+            WAIT for 1 fs;
+            ANNOTATE_oaA(0);
+            ANNOTATE_oaB(0);
+            ANNOTATE_oaC(0);
+            ANNOTATE_oaD(0);
+            ANNO_LOOP : LOOP
+                WAIT for 50 ns;
+                TX_TIME := TX_TIME + 50;
+                ANNOTATE_oaA(TX_TIME);
+                ANNOTATE_oaB(TX_TIME);
+                ANNOTATE_oaC(TX_TIME);
+                ANNOTATE_oaD(TX_TIME);
+                WAIT for 50 ns;
+                TX_TIME := TX_TIME + 50;
+            END LOOP ANNO_LOOP;
+        END PROCESS;
+
+        PROCESS
+            BEGIN
+                -- -------------  Current Time:  100ns
+                WAIT FOR 100 ns;
+                iaData <= "01";
+                -- -------------------------------------
+                -- -------------  Current Time:  200ns
+                WAIT FOR 100 ns;
+                iaData <= "11";
+                iaAdr <= "01";
+                -- -------------------------------------
+                -- -------------  Current Time:  300ns
+                WAIT FOR 100 ns;
+                iaData <= "10";
+                iaAdr <= "10";
+                -- -------------------------------------
+                -- -------------  Current Time:  400ns
+                WAIT FOR 100 ns;
+                iaData <= "00";
+                iaAdr <= "11";
+                -- -------------------------------------
+                -- -------------  Current Time:  500ns
+                WAIT FOR 100 ns;
+                iaData <= "11";
+                -- -------------------------------------
+                -- -------------  Current Time:  600ns
+                WAIT FOR 100 ns;
+                iaData <= "01";
+                -- -------------------------------------
+                -- -------------  Current Time:  800ns
+                WAIT FOR 200 ns;
+                iaData <= "10";
+                -- -------------------------------------
+                WAIT FOR 200 ns;
+
+                STD.TEXTIO.write(TX_OUT, string'("Total[]"));
+                STD.TEXTIO.writeline(RESULTS, TX_OUT);
+                ASSERT (FALSE) REPORT
+                    "Success! Simulation for annotation completed"
+                    SEVERITY FAILURE;
+            END PROCESS;
+
+    END testbench_arch;
+

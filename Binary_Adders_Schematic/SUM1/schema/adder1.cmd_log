@@ -1,0 +1,7 @@
+sch2vhdl -intstyle ise -family spartan3 -flat -suppress -w "D:/SUM1-Ricea- Alexandra/schema/adder1.sch" adder1.vhf
+xst -ise "D:/SUM1-Ricea- Alexandra/schema/schema.ise" -intstyle ise -ifn adder1.xst -ofn adder1.syr
+ngdbuild -ise "D:/SUM1-Ricea- Alexandra/schema/schema.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-ft256-4 "adder1.ngc" adder1.ngd
+map -ise "D:/SUM1-Ricea- Alexandra/schema/schema.ise" -intstyle ise -p xc3s400-ft256-4 -cm area -pr b -k 4 -c 100 -o adder1_map.ncd adder1.ngd adder1.pcf
+par -ise "D:/SUM1-Ricea- Alexandra/schema/schema.ise" -w -intstyle ise -ol std -t 1 adder1_map.ncd adder1.ncd adder1.pcf
+trce -ise "D:/SUM1-Ricea- Alexandra/schema/schema.ise" -intstyle ise -e 3 -s 4 -xml adder1 adder1.ncd -o adder1.twr adder1.pcf
+netgen -ise "D:/SUM1-Ricea- Alexandra/schema/schema.ise" -intstyle ise -s 4 -pcf adder1.pcf -rpw 100 -tpw 0 -ar Structure -tm adder1 -insert_pp_buffers false -w -dir netgen/par -ofmt vhdl -sim adder1.ncd adder1_timesim.vhd

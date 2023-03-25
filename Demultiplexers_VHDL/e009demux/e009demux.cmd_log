@@ -1,0 +1,1 @@
+xst -ise "D:/e009demux/e009demux.ise" -intstyle ise -ifn e009demux.xst -ofn e009demux.syr

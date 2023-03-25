@@ -1,0 +1,98 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\laborator_6_partea_comuna_II\reg4_2
+Ereg4_2
+Z1 w1649534484
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+Z3 DPx4 ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+Z4 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z5 8reg4_2.vhd
+Z6 Freg4_2.vhd
+l0
+L34
+VM???dRUGBf`6GdeVD`ck73
+Z7 OX;C;6.4b;39
+31
+Z8 o-explicit -93 -O0
+Z9 tExplicit 1
+!s100 0=NM0B<5J8<hVXESb2XGM1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 6 reg4_2 0 22 M???dRUGBf`6GdeVD`ck73
+l46
+L42
+VnQ]F9JVAZLMbRe70OPnPd3
+R7
+31
+Z10 Mx3 4 ieee 14 std_logic_1164
+Mx2 4 ieee 15 std_logic_arith
+Mx1 4 ieee 18 std_logic_unsigned
+R8
+R9
+!s100 C`b^m=;N0alZj@78<G;Oa1
+Astructure
+Z11 DPx3 std 6 textio 0 22 m2KQDRRhmF833<<DjYdL70
+DPx9 vital2000 16 vital_primitives 0 22 P<o@__YgakiANKimF[boN3
+DPx7 simprim 8 vpackage 0 22 62<92?H`[OPC[b77DL^6:0
+DPx9 vital2000 12 vital_timing 0 22 S^n>oJ2GS[H5aTKMo9OkE0
+DPx7 simprim 11 vcomponents 0 22 NYkjb^:l?oWklmcJQ6=181
+R4
+DEx4 work 6 reg4_2 0 22 Q@B3bZE_AFZ[20?Uk@T=L0
+l76
+L51
+VaY_J7Mfc7[>i4AMkX;:Qf1
+R7
+31
+Mx6 4 ieee 14 std_logic_1164
+Mx5 7 simprim 11 vcomponents
+Mx4 9 vital2000 12 vital_timing
+Mx3 7 simprim 8 vpackage
+Mx2 9 vital2000 16 vital_primitives
+Z12 Mx1 3 std 6 textio
+R8
+R9
+Fnetgen/par/reg4_2_timesim.vhd
+w1649618386
+8netgen/par/reg4_2_timesim.vhd
+!s100 VAn@^hO;]2I?<k;N0e`Vn2
+Etbw
+Z13 w1649618343
+R11
+Z14 DPx4 ieee 16 std_logic_textio 0 22 8YS?iX`WD1REQG`ZRYQGB2
+R2
+R3
+R4
+Z15 8tbw.vhw
+Z16 Ftbw.vhw
+l0
+L27
+VY6RA9cmUT2eh9Wn<Ne4JC3
+!s100 fUiLYQ]4Wi@^6ZBjQ7^hO0
+R7
+31
+R8
+R9
+Atestbench_arch
+R11
+R14
+R2
+R3
+R4
+Z17 DEx4 work 3 tbw 0 22 Y6RA9cmUT2eh9Wn<Ne4JC3
+l53
+L30
+Z18 V3YRTD35ZGW^QZK[o=E<OF2
+Z19 !s100 Wk1[DZc<TP0V5R?E<]WMc1
+R7
+31
+Z20 Mx5 4 ieee 14 std_logic_1164
+Z21 Mx4 4 ieee 15 std_logic_arith
+Z22 Mx3 4 ieee 18 std_logic_unsigned
+Z23 Mx2 4 ieee 16 std_logic_textio
+R12
+R8
+R9

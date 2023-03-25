@@ -1,0 +1,2 @@
+xst -ise "D:/laborator_5/Dlatch3/Dlatch3.ise" -intstyle ise -ifn Dlatch3.xst -ofn Dlatch3.syr
+xst -ise "D:/laborator_5/Dlatch3/Dlatch3.ise" -intstyle ise -ifn Dlatch3.xst -ofn Dlatch3.syr

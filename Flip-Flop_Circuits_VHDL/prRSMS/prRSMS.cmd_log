@@ -1,0 +1,4 @@
+xst -ise "D:/laborator_5/prRSMS/prRSMS.ise" -intstyle ise -ifn prRSMS.xst -ofn prRSMS.syr
+xst -ise "D:/laborator_5/prRSMS/prRSMS.ise" -intstyle ise -ifn prRSMS.xst -ofn prRSMS.syr
+xst -ise "D:/laborator_5/prRSMS/prRSMS.ise" -intstyle ise -ifn prRSMS.xst -ofn prRSMS.syr
+xst -ise "D:/laborator_5/prRSMS/prRSMS.ise" -intstyle ise -ifn prRSMS.xst -ofn prRSMS.syr

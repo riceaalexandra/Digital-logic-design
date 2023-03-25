@@ -1,0 +1,7 @@
+V3 3
+FL D:/laborator_7_partea_comuna/Num16/Num16.vhd 2022/04/11.20:55:58 J.40
+EN work/Num16 1651932649 FL D:/laborator_7_partea_comuna/Num16/Num16.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/Num16/Behavioral 1651932650 \
+      FL D:/laborator_7_partea_comuna/Num16/Num16.vhd EN work/Num16 1651932649

@@ -1,0 +1,78 @@
+--------------------------------------------------------------------------------
+Release 9.2.04i Trace 
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx92i\bin\nt\trce.exe -ise
+D:/laborator_6_partea_comuna_II/RegDSD/RegDSD.ise -intstyle ise -e 3 -s 4 -xml
+RegDSD RegDSD.ncd -o RegDSD.twr RegDSD.pcf
+
+Design file:              regdsd.ncd
+Physical constraint file: regdsd.pcf
+Device,package,speed:     xc3s400,ft256,-4 (PRODUCTION 1.39 2007-10-19)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock iClock
+------------+------------+------------+------------------+--------+
+            |  Setup to  |  Hold to   |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+iISDD       |    1.552(R)|    0.234(R)|iClock_BUFGP      |   0.000|
+iISDS       |    1.141(R)|    0.563(R)|iClock_BUFGP      |   0.000|
+iSens       |    1.893(R)|    0.427(R)|iClock_BUFGP      |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock iClock to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+oaQ<0>      |    9.236(R)|iClock_BUFGP      |   0.000|
+oaQ<1>      |    9.321(R)|iClock_BUFGP      |   0.000|
+oaQ<2>      |    9.328(R)|iClock_BUFGP      |   0.000|
+oaQ<3>      |    9.620(R)|iClock_BUFGP      |   0.000|
+oaQ<4>      |   10.026(R)|iClock_BUFGP      |   0.000|
+oaQ<5>      |    9.446(R)|iClock_BUFGP      |   0.000|
+oaQ<6>      |    9.989(R)|iClock_BUFGP      |   0.000|
+oaQ<7>      |    9.133(R)|iClock_BUFGP      |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock iClock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+iClock         |    2.072|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Sun Apr 10 22:47:46 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 119 MB
+
+
+

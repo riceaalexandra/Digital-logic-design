@@ -1,0 +1,52 @@
+# Reading C:/Modeltech_xe_starter/tcl/vsim/pref.tcl 
+# do {tbw.tdo} 
+# Model Technology ModelSim XE III vcom 6.4b Compiler 2008.11 Nov 15 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package vital_timing
+# -- Loading package vcomponents
+# -- Loading package vital_primitives
+# -- Loading package textio
+# -- Loading package vpackage
+# -- Compiling entity regtl
+# -- Compiling architecture structure of regtl
+# Model Technology ModelSim XE III vcom 6.4b Compiler 2008.11 Nov 15 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Compiling entity tbw
+# -- Compiling architecture testbench_arch of tbw
+# vsim -lib work -sdfmax /UUT=netgen/par/RegTL_timesim.sdf -t 1ps tbw 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tbw(testbench_arch)
+# SDF 6.4b Compiler 2008.11 Nov 15 2008
+# 
+# Loading vital2000.vital_timing(body)
+# Loading simprim.vcomponents
+# Loading vital2000.vital_primitives(body)
+# Loading simprim.vpackage(body)
+# Loading work.regtl(structure)
+# Loading simprim.x_buf(x_buf_v)
+# Loading simprim.x_inv(x_inv_v)
+# Loading simprim.x_latche(x_latche_v)
+# Loading simprim.x_obuft(x_obuft_v)
+# Loading simprim.x_bufgmux(x_bufgmux_v)
+# Loading simprim.x_one(x_one_v)
+# Loading simprim.x_zero(x_zero_v)
+# Loading simprim.x_roc(x_roc_v)
+# Loading simprim.x_toc(x_toc_v)
+# Loading instances from netgen/par/RegTL_timesim.sdf
+# Loading timing data from netgen/par/RegTL_timesim.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Region: /tbw  File: tbw.vhw
+# .main_pane.mdi.interior.cs.vm.paneset.cli_0.wf.clip.cs.pw.wf
+# .main_pane.workspace.interior.cs.nb.canvas.notebook.cs.page2.cs
+# .main_pane.signals.interior.cs

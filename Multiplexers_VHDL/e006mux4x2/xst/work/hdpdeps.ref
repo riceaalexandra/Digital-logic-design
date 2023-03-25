@@ -1,0 +1,7 @@
+V3 3
+FL D:/e006mux4x2/e006mux4x2.vhd 2022/02/27.17:58:51 J.40
+EN work/e006mux4x2 1645977571 FL D:/e006mux4x2/e006mux4x2.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/e006mux4x2/Behavioral 1645977572 \
+      FL D:/e006mux4x2/e006mux4x2.vhd EN work/e006mux4x2 1645977571

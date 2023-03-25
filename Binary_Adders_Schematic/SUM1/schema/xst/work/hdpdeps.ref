@@ -1,0 +1,8 @@
+V3 7
+FL "D:/SUM1-Ricea- Alexandra/schema/adder1.vhf" 2022/01/11.13:23:03 J.40
+EN work/adder1 1641900394 FL "D:/SUM1-Ricea- Alexandra/schema/adder1.vhf" \
+      PB ieee/std_logic_1164 1192821031 PH ieee/NUMERIC_STD 1192821033 LB UNISIM \
+      PH unisim/VCOMPONENTS 1194566982
+AR work/adder1/BEHAVIORAL 1641900395 \
+      FL "D:/SUM1-Ricea- Alexandra/schema/adder1.vhf" EN work/adder1 1641900394 \
+      CP AND2 CP OR3 CP XOR3

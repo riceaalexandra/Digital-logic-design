@@ -1,0 +1,1 @@
+sch2vhdl -intstyle ise -family spartan3 -flat -suppress -w "D:/SUM4 folosind SUM1- Ricea Alexandra/schema/adder1.sch" adder1.vhf

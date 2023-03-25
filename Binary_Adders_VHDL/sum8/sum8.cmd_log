@@ -1,0 +1,4 @@
+xst -ise "D:/sum8/sum8.ise" -intstyle ise -ifn sum8.xst -ofn sum8.syr
+xst -ise "D:/sum8/sum8.ise" -intstyle ise -ifn sum8.xst -ofn sum8.syr
+xst -ise "D:/sum8/sum8.ise" -intstyle ise -ifn sum8.xst -ofn sum8.syr
+xst -ise "D:/sum8/sum8.ise" -intstyle ise -ifn sum8.xst -ofn sum8.syr

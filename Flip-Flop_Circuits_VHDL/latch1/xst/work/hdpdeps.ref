@@ -1,0 +1,7 @@
+V3 3
+FL D:/laborator_5/latch1/latch1.vhd 2022/03/27.21:32:50 J.40
+EN work/latch1 1648455640 FL D:/laborator_5/latch1/latch1.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/latch1/Behavioral 1648455641 \
+      FL D:/laborator_5/latch1/latch1.vhd EN work/latch1 1648455640

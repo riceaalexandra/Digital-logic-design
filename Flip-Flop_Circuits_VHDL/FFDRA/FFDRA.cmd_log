@@ -1,0 +1,2 @@
+xst -ise "D:/laborator_5/FFDRA/FFDRA.ise" -intstyle ise -ifn FFDRA.xst -ofn FFDRA.syr
+xst -ise "D:/laborator_5/FFDRA/FFDRA.ise" -intstyle ise -ifn FFDRA.xst -ofn FFDRA.syr

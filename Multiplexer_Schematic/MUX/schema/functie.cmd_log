@@ -1,0 +1,2 @@
+sch2vhdl -intstyle ise -family spartan3 -flat -suppress -w "D:/MUX-Ricea-Alexandra/schema/functie.sch" functie.vhf
+sch2vhdl -intstyle ise -family spartan3 -flat -suppress -w "D:/MUX-Ricea-Alexandra/schema/functie.sch" functie.vhf

@@ -1,0 +1,17 @@
+V3 11
+FL "D:/SUM4 folosind SUM1- Ricea Alexandra/schema/adder1.vhf" 2022/01/11.15:10:20 J.40
+EN work/adder1 1641908154 \
+      FL "D:/SUM4 folosind SUM1- Ricea Alexandra/schema/adder1.vhf" \
+      PB ieee/std_logic_1164 1192821031 PH ieee/NUMERIC_STD 1192821033 LB UNISIM \
+      PH unisim/VCOMPONENTS 1194566982
+AR work/adder1/BEHAVIORAL 1641908155 \
+      FL "D:/SUM4 folosind SUM1- Ricea Alexandra/schema/adder1.vhf" \
+      EN work/adder1 1641908154 CP AND2 CP OR3 CP XOR3
+FL "D:/SUM4 folosind SUM1- Ricea Alexandra/schema/adder4.vhf" 2022/01/11.15:17:09 J.40
+EN work/adder4 1641908156 \
+      FL "D:/SUM4 folosind SUM1- Ricea Alexandra/schema/adder4.vhf" \
+      PB ieee/std_logic_1164 1192821031 PH ieee/NUMERIC_STD 1192821033 LB UNISIM \
+      PH unisim/VCOMPONENTS 1194566982
+AR work/adder4/BEHAVIORAL 1641908157 \
+      FL "D:/SUM4 folosind SUM1- Ricea Alexandra/schema/adder4.vhf" \
+      EN work/adder4 1641908156 CP adder1

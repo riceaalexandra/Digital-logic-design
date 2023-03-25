@@ -1,0 +1,14 @@
+V3 10
+FL D:/DEC-Ricea-Alexandra/schema/functie.vhf 2022/01/06.12:25:48 J.40
+EN work/D2_4E_MXILINX_functie 1641465236 \
+      FL D:/DEC-Ricea-Alexandra/schema/functie.vhf PB ieee/std_logic_1164 1192821031 \
+      PH ieee/NUMERIC_STD 1192821033 LB UNISIM PH unisim/VCOMPONENTS 1194566982
+AR work/D2_4E_MXILINX_functie/BEHAVIORAL 1641465237 \
+      FL D:/DEC-Ricea-Alexandra/schema/functie.vhf EN work/D2_4E_MXILINX_functie 1641465236 \
+      CP AND3 CP AND3B1 CP AND3B2
+EN work/functie 1641465238 \
+      FL D:/DEC-Ricea-Alexandra/schema/functie.vhf PB ieee/std_logic_1164 1192821031 \
+      PH ieee/NUMERIC_STD 1192821033 LB UNISIM PH unisim/VCOMPONENTS 1194566982
+AR work/functie/BEHAVIORAL 1641465239 \
+      FL D:/DEC-Ricea-Alexandra/schema/functie.vhf EN work/functie 1641465238 \
+      CP D2_4E_MXILINX_functie

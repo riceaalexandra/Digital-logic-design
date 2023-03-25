@@ -1,0 +1,2 @@
+xst -ise "D:/e004mux8/e004mux8.ise" -intstyle ise -ifn e004mux8.xst -ofn e004mux8.syr
+netgen -ise "D:/e004mux8/e004mux8.ise" -intstyle ise -ar Structure -tm e004mux8 -w -dir netgen/synthesis -ofmt vhdl -sim e004mux8.ngc e004mux8_synthesis.vhd

@@ -1,0 +1,8 @@
+xst -ise "D:/laborator_5/prRSasinc/prRSasinc.ise" -intstyle ise -ifn prRSasinc.xst -ofn prRSasinc.syr
+ngdbuild -ise "D:/laborator_5/prRSasinc/prRSasinc.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-ft256-4 "prRSasinc.ngc" prRSasinc.ngd
+map -ise "D:/laborator_5/prRSasinc/prRSasinc.ise" -intstyle ise -p xc3s400-ft256-4 -cm area -pr b -k 4 -c 100 -o prRSasinc_map.ncd prRSasinc.ngd prRSasinc.pcf
+par -ise "D:/laborator_5/prRSasinc/prRSasinc.ise" -w -intstyle ise -ol std -t 1 prRSasinc_map.ncd prRSasinc.ncd prRSasinc.pcf
+trce -ise "D:/laborator_5/prRSasinc/prRSasinc.ise" -intstyle ise -e 3 -s 4 -xml prRSasinc prRSasinc.ncd -o prRSasinc.twr prRSasinc.pcf
+netgen -ise "D:/laborator_5/prRSasinc/prRSasinc.ise" -intstyle ise -s 4 -pcf prRSasinc.pcf -rpw 100 -tpw 0 -ar Structure -tm prRSasinc -insert_pp_buffers false -w -dir netgen/par -ofmt vhdl -sim prRSasinc.ncd prRSasinc_timesim.vhd
+xst -ise "D:/laborator_5/prRSasinc/prRSasinc.ise" -intstyle ise -ifn prRSasinc.xst -ofn prRSasinc.syr
+xst -ise "D:/laborator_5/prRSasinc/prRSasinc.ise" -intstyle ise -ifn prRSasinc.xst -ofn prRSasinc.syr

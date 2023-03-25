@@ -1,0 +1,2 @@
+xst -ise "D:/laborator_5/prRSlatch/prRSlatch.ise" -intstyle ise -ifn prRSlatch.xst -ofn prRSlatch.syr
+xst -ise "D:/laborator_5/prRSlatch/prRSlatch.ise" -intstyle ise -ifn prRSlatch.xst -ofn prRSlatch.syr

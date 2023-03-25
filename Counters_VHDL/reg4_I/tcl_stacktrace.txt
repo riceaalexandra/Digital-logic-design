@@ -1,0 +1,10 @@
+Sun Apr 10 22:01:28 GTB Daylight Time 2022
+Trace back: can't read "wavePriv(SaveWaveBalloonOn)": no such element in array
+    while executing
+"set PrefWave(WaveformPopupEnabled) $wavePriv(SaveWaveBalloonOn)"
+    (procedure "wave_drag_zoom_end" line 8)
+    invoked from within
+"wave_drag_zoom_end	.main_pane.mdi.interior.cs.vm.paneset.cli_0.wf.clip.cs.pw.wf.grid.row0,wave.data 0 493 345 766 534 "
+    (command bound to event)
+  2: ::tkerror {can't read "wavePriv(SaveWaveBalloonOn)": no such element in array}
+  1: ::bgerror {can't read "wavePriv(SaveWaveBalloonOn)": no such element in array}

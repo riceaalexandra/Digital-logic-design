@@ -1,0 +1,6 @@
+V3 3
+FL D:/e018cop/e018cop.vhd 2022/03/20.12:44:09 J.40
+EN work/e018cop 1647773205 FL D:/e018cop/e018cop.vhd PB ieee/std_logic_1164 1192821031 \
+      PB ieee/std_logic_arith 1192821032 PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/e018cop/Behavioral 1647773206 \
+      FL D:/e018cop/e018cop.vhd EN work/e018cop 1647773205

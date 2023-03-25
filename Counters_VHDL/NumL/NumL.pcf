@@ -1,0 +1,7 @@
+//! **************************************************************************
+// Written by: Map J.40 on Tue Apr 12 08:31:34 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+NET "iClock_BUFGP/IBUFG" BEL "iClock_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;

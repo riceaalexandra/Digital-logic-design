@@ -1,0 +1,1 @@
+xst -ise "D:/e013sumbin16/e013sumbin16.ise" -intstyle ise -ifn e013sumbin16.xst -ofn e013sumbin16.syr

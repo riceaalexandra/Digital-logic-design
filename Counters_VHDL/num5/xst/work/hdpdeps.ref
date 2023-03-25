@@ -1,0 +1,7 @@
+V3 3
+FL D:/laborator_7_partea_comuna/num5/num5.vhd 2022/04/11.21:41:53 J.40
+EN work/num5 1651934130 FL D:/laborator_7_partea_comuna/num5/num5.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/num5/Behavioral 1651934131 \
+      FL D:/laborator_7_partea_comuna/num5/num5.vhd EN work/num5 1651934130

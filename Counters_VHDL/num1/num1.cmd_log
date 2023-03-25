@@ -1,0 +1,13 @@
+xst -ise "D:/laborator_7_partea_comuna/num1/num1.ise" -intstyle ise -ifn num1.xst -ofn num1.syr
+ngdbuild -ise "D:/laborator_7_partea_comuna/num1/num1.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xa3s50-vqg100-4 "num1.ngc" num1.ngd
+map -ise "D:/laborator_7_partea_comuna/num1/num1.ise" -intstyle ise -p xa3s50-vqg100-4 -cm area -pr b -k 4 -c 100 -o num1_map.ncd num1.ngd num1.pcf
+par -ise "D:/laborator_7_partea_comuna/num1/num1.ise" -w -intstyle ise -ol std -t 1 num1_map.ncd num1.ncd num1.pcf
+trce -ise "D:/laborator_7_partea_comuna/num1/num1.ise" -intstyle ise -e 3 -s 4 -xml num1 num1.ncd -o num1.twr num1.pcf
+netgen -ise "D:/laborator_7_partea_comuna/num1/num1.ise" -intstyle ise -s 4 -pcf num1.pcf -sdf_anno true -sdf_path netgen/par -insert_glbl true -insert_pp_buffers false -w -dir netgen/par -ofmt verilog -sim num1.ncd num1_timesim.v
+xst -ise "D:/laborator_7_partea_comuna/num1/num1.ise" -intstyle ise -ifn num1.xst -ofn num1.syr
+xst -ise "D:/laborator_7_partea_comuna/num1/num1.ise" -intstyle ise -ifn num1.xst -ofn num1.syr
+xst -ise "D:/laborator_7_partea_comuna/num1/num1.ise" -intstyle ise -ifn num1.xst -ofn num1.syr
+ngdbuild -ise "D:/laborator_7_partea_comuna/num1/num1.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xa3s50-vqg100-4 "num1.ngc" num1.ngd
+map -ise "D:/laborator_7_partea_comuna/num1/num1.ise" -intstyle ise -p xa3s50-vqg100-4 -cm area -pr b -k 4 -c 100 -o num1_map.ncd num1.ngd num1.pcf
+par -ise "D:/laborator_7_partea_comuna/num1/num1.ise" -w -intstyle ise -ol std -t 1 num1_map.ncd num1.ncd num1.pcf
+trce -ise "D:/laborator_7_partea_comuna/num1/num1.ise" -intstyle ise -e 3 -s 4 -xml num1 num1.ncd -o num1.twr num1.pcf

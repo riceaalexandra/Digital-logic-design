@@ -1,0 +1,8 @@
+sch2vhdl -intstyle ise -family spartan3 -flat -suppress -w "D:/SUM4 folosind SUM1- Ricea Alexandra/schema/adder4.sch" adder4.vhf
+sch2vhdl -intstyle ise -family spartan3 -flat -suppress -w "D:/SUM4 folosind SUM1- Ricea Alexandra/schema/adder4.sch" adder4.vhf
+xst -ise "D:/SUM4 folosind SUM1- Ricea Alexandra/schema/schema.ise" -intstyle ise -ifn adder4.xst -ofn adder4.syr
+ngdbuild -ise "D:/SUM4 folosind SUM1- Ricea Alexandra/schema/schema.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-ft256-4 "adder4.ngc" adder4.ngd
+map -ise "D:/SUM4 folosind SUM1- Ricea Alexandra/schema/schema.ise" -intstyle ise -p xc3s400-ft256-4 -cm area -pr b -k 4 -c 100 -o adder4_map.ncd adder4.ngd adder4.pcf
+par -ise "D:/SUM4 folosind SUM1- Ricea Alexandra/schema/schema.ise" -w -intstyle ise -ol std -t 1 adder4_map.ncd adder4.ncd adder4.pcf
+trce -ise "D:/SUM4 folosind SUM1- Ricea Alexandra/schema/schema.ise" -intstyle ise -e 3 -s 4 -xml adder4 adder4.ncd -o adder4.twr adder4.pcf
+netgen -ise "D:/SUM4 folosind SUM1- Ricea Alexandra/schema/schema.ise" -intstyle ise -s 4 -pcf adder4.pcf -rpw 100 -tpw 0 -ar Structure -tm adder4 -insert_pp_buffers false -w -dir netgen/par -ofmt vhdl -sim adder4.ncd adder4_timesim.vhd

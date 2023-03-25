@@ -1,0 +1,7 @@
+V3 3
+FL D:/laborator_8_partea_comuna/MemRAM/MemRAM.vhd 2022/05/08.15:47:10 J.40
+EN work/MemRAM 1652038627 FL D:/laborator_8_partea_comuna/MemRAM/MemRAM.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/MemRAM/Behavioral 1652038628 \
+      FL D:/laborator_8_partea_comuna/MemRAM/MemRAM.vhd EN work/MemRAM 1652038627

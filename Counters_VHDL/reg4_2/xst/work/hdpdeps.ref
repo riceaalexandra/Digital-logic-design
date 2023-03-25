@@ -1,0 +1,7 @@
+V3 3
+FL D:/laborator_6_partea_comuna_II/reg4_2/reg4_2.vhd 2022/04/09.23:01:24 J.40
+EN work/reg4_2 1649617934 FL D:/laborator_6_partea_comuna_II/reg4_2/reg4_2.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/reg4_2/Behavioral 1649617935 \
+      FL D:/laborator_6_partea_comuna_II/reg4_2/reg4_2.vhd EN work/reg4_2 1649617934

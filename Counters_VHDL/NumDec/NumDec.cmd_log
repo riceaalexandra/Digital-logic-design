@@ -1,0 +1,1 @@
+xst -ise "D:/laborator_7_partea_comuna/NumDec/NumDec.ise" -intstyle ise -ifn NumDec.xst -ofn NumDec.syr

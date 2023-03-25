@@ -1,0 +1,2 @@
+xst -ise "D:/prcf/prcf.ise" -intstyle ise -ifn prcf.xst -ofn prcf.syr
+xst -ise "D:/prcf/prcf.ise" -intstyle ise -ifn prcf.xst -ofn prcf.syr

@@ -1,0 +1,2 @@
+xst -ise "D:/laborator_6_partea_comuna_I/RegSP/RegSP.ise" -intstyle ise -ifn RegSP.xst -ofn RegSP.syr
+xst -ise "D:/laborator_6_partea_comuna_I/RegSP/RegSP.ise" -intstyle ise -ifn RegSP.xst -ofn RegSP.syr

@@ -1,0 +1,9 @@
+V3 3
+FL D:/laborator_7_partea_comuna/DivFrecv20/DivFrecv20.vhd 2022/04/11.21:47:16 J.40
+EN work/DivFrecv20 1651956105 \
+      FL D:/laborator_7_partea_comuna/DivFrecv20/DivFrecv20.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/DivFrecv20/Behavioral 1651956106 \
+      FL D:/laborator_7_partea_comuna/DivFrecv20/DivFrecv20.vhd \
+      EN work/DivFrecv20 1651956105

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<DeviceUsageSummary rev="1">
+<DesignStatistics TimeStamp="Sun Apr 10 23:19:27 2022"><group name="MiscellaneousStatistics">
+<item name="AVG_LUT_FAN_IN" rev="1">
+<attrib name="value" value="-1.000000"/></item>
+<item name="AVG_SIG_FANOUT" rev="1">
+<attrib name="value" value="-1.000000"/></item>
+<item name="PK_NUM_BONDED_IOBS" rev="1">
+<attrib name="value" value="18"/></item>
+<item name="PK_NUM_EQUIV_GATES" rev="1">
+<attrib name="value" value="67"/></item>
+<item name="PK_NUM_IOB_LATS" rev="1">
+<attrib name="value" value="8"/></item>
+<item name="PK_NUM_JTAG_GATES" rev="1">
+<attrib name="value" value="18"/></item>
+<item name="PK_NUM_LUTLESS_IOB_LATS" rev="1">
+<attrib name="value" value="8"/></item>
+<item name="PK_NUM_TOTAL_LUTLESS_REGISTERS" rev="1">
+<attrib name="value" value="8"/></item>
+<item name="PK_NUM_XBZ_GCLKS" rev="1">
+<attrib name="value" value="1"/></item>
+</group>
+</DesignStatistics>
+<CmdHistory>
+</CmdHistory>
+</DeviceUsageSummary>

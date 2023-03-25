@@ -1,0 +1,164 @@
+--------------------------------------------------------------------------------
+Release 9.2.04i Trace 
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx92i\bin\nt\trce.exe -ise D:/SUM8-Ricea-Alexandra/schema/schema.ise
+-intstyle ise -e 3 -s 4 -xml functie functie.ncd -o functie.twr functie.pcf
+
+Design file:              functie.ncd
+Physical constraint file: functie.pcf
+Device,package,speed:     xc3s400,ft256,-4 (PRODUCTION 1.39 2007-10-19)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |COUT           |   10.899|
+A<0>           |OFL            |   12.500|
+A<0>           |S<0>           |    9.562|
+A<0>           |S<1>           |   10.329|
+A<0>           |S<2>           |    9.813|
+A<0>           |S<3>           |   10.508|
+A<0>           |S<4>           |   10.649|
+A<0>           |S<5>           |   10.773|
+A<0>           |S<6>           |   10.419|
+A<0>           |S<7>           |   10.925|
+A<1>           |COUT           |   10.690|
+A<1>           |OFL            |   12.291|
+A<1>           |S<1>           |    9.676|
+A<1>           |S<2>           |    9.604|
+A<1>           |S<3>           |   10.299|
+A<1>           |S<4>           |   10.440|
+A<1>           |S<5>           |   10.564|
+A<1>           |S<6>           |   10.210|
+A<1>           |S<7>           |   10.716|
+A<2>           |COUT           |   10.522|
+A<2>           |OFL            |   12.123|
+A<2>           |S<2>           |    8.599|
+A<2>           |S<3>           |    9.914|
+A<2>           |S<4>           |   10.272|
+A<2>           |S<5>           |   10.396|
+A<2>           |S<6>           |   10.042|
+A<2>           |S<7>           |   10.548|
+A<3>           |COUT           |   10.901|
+A<3>           |OFL            |   12.502|
+A<3>           |S<3>           |    9.849|
+A<3>           |S<4>           |   10.651|
+A<3>           |S<5>           |   10.775|
+A<3>           |S<6>           |   10.421|
+A<3>           |S<7>           |   10.927|
+A<4>           |COUT           |   10.666|
+A<4>           |OFL            |   12.267|
+A<4>           |S<4>           |    9.579|
+A<4>           |S<5>           |   10.323|
+A<4>           |S<6>           |   10.186|
+A<4>           |S<7>           |   10.692|
+A<5>           |COUT           |   10.542|
+A<5>           |OFL            |   12.143|
+A<5>           |S<5>           |    9.755|
+A<5>           |S<6>           |   10.062|
+A<5>           |S<7>           |   10.568|
+A<6>           |COUT           |   11.004|
+A<6>           |OFL            |   12.388|
+A<6>           |S<6>           |    9.687|
+A<6>           |S<7>           |   10.813|
+A<7>           |COUT           |   10.074|
+A<7>           |OFL            |   11.431|
+A<7>           |S<7>           |    9.439|
+B<0>           |COUT           |    9.984|
+B<0>           |OFL            |   11.585|
+B<0>           |S<0>           |    8.647|
+B<0>           |S<1>           |    9.414|
+B<0>           |S<2>           |    8.898|
+B<0>           |S<3>           |    9.593|
+B<0>           |S<4>           |    9.734|
+B<0>           |S<5>           |    9.858|
+B<0>           |S<6>           |    9.504|
+B<0>           |S<7>           |   10.010|
+B<1>           |COUT           |   10.700|
+B<1>           |OFL            |   12.301|
+B<1>           |S<1>           |    9.686|
+B<1>           |S<2>           |    9.614|
+B<1>           |S<3>           |   10.309|
+B<1>           |S<4>           |   10.450|
+B<1>           |S<5>           |   10.574|
+B<1>           |S<6>           |   10.220|
+B<1>           |S<7>           |   10.726|
+B<2>           |COUT           |   10.559|
+B<2>           |OFL            |   12.160|
+B<2>           |S<2>           |    8.636|
+B<2>           |S<3>           |    9.951|
+B<2>           |S<4>           |   10.309|
+B<2>           |S<5>           |   10.433|
+B<2>           |S<6>           |   10.079|
+B<2>           |S<7>           |   10.585|
+B<3>           |COUT           |   10.349|
+B<3>           |OFL            |   11.950|
+B<3>           |S<3>           |    9.297|
+B<3>           |S<4>           |   10.099|
+B<3>           |S<5>           |   10.223|
+B<3>           |S<6>           |    9.869|
+B<3>           |S<7>           |   10.375|
+B<4>           |COUT           |   10.759|
+B<4>           |OFL            |   12.360|
+B<4>           |S<4>           |    9.672|
+B<4>           |S<5>           |   10.416|
+B<4>           |S<6>           |   10.279|
+B<4>           |S<7>           |   10.785|
+B<5>           |COUT           |   10.245|
+B<5>           |OFL            |   11.846|
+B<5>           |S<5>           |    9.458|
+B<5>           |S<6>           |    9.765|
+B<5>           |S<7>           |   10.271|
+B<6>           |COUT           |   10.170|
+B<6>           |OFL            |   11.554|
+B<6>           |S<6>           |    8.853|
+B<6>           |S<7>           |    9.979|
+B<7>           |COUT           |    9.641|
+B<7>           |OFL            |   10.998|
+B<7>           |S<7>           |    9.006|
+CIN            |COUT           |   10.766|
+CIN            |OFL            |   12.367|
+CIN            |S<0>           |   10.049|
+CIN            |S<1>           |   10.196|
+CIN            |S<2>           |    9.680|
+CIN            |S<3>           |   10.375|
+CIN            |S<4>           |   10.516|
+CIN            |S<5>           |   10.640|
+CIN            |S<6>           |   10.286|
+CIN            |S<7>           |   10.792|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Jan 06 13:31:48 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 118 MB
+
+
+

@@ -1,0 +1,62 @@
+--------------------------------------------------------------------------------
+Release 9.2.04i Trace 
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx92i\bin\nt\trce.exe -ise D:/DEC-Ricea-Alexandra/schema/schema.ise
+-intstyle ise -e 3 -s 4 -xml functie functie.ncd -o functie.twr functie.pcf
+
+Design file:              functie.ncd
+Physical constraint file: functie.pcf
+Device,package,speed:     xc3s400,ft256,-4 (PRODUCTION 1.39 2007-10-19)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+ADR<0>         |DATA<0>        |    7.794|
+ADR<0>         |DATA<1>        |    7.764|
+ADR<0>         |DATA<2>        |    7.882|
+ADR<0>         |DATA<3>        |    8.595|
+ADR<1>         |DATA<0>        |    7.640|
+ADR<1>         |DATA<1>        |    7.610|
+ADR<1>         |DATA<2>        |    7.713|
+ADR<1>         |DATA<3>        |    8.426|
+E              |DATA<0>        |    7.876|
+E              |DATA<1>        |    7.846|
+E              |DATA<2>        |    7.873|
+E              |DATA<3>        |    8.586|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Jan 06 12:36:08 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 118 MB
+
+
+

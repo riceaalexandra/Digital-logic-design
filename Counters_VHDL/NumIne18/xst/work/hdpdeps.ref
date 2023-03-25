@@ -1,0 +1,7 @@
+V3 3
+FL D:/laborator_7_partea_comuna/NumIne18/NumIne18.vhd 2022/04/11.21:24:28 J.40
+EN work/NumIne18 1651933844 FL D:/laborator_7_partea_comuna/NumIne18/NumIne18.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/NumIne18/Behavioral 1651933845 \
+      FL D:/laborator_7_partea_comuna/NumIne18/NumIne18.vhd EN work/NumIne18 1651933844
